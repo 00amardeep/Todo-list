@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+
+    <title>ToDO  manipulation</title>
+
+</head>
+<body>
+    <p id="p1">Hello world</p>
+    <p id="p2">Click the button , and this paragraph will be removed from the DOM.</p>
+    <button onclick="myfunction()">Remove paragraph</button>
+    <script>
+        document.getElementById("p1").innerHTML="New Text"
+        function myfunction()
+        {
+    var myobj=document.getElementById("p2");
+    myobj.remove();}
+
+    </script>
+    <p>the above text was changed by a script</p>
+</body>
+</html>
